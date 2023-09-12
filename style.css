@@ -67,6 +67,10 @@ h6 {
     isolation: isolate;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -76,8 +80,15 @@ body {
 
 .sidebar {
     grid-row: 1 / 3;
-
+    display: grid;
+    grid-template-rows: 50px 2fr 1fr 2fr;
+    padding: 1.5rem;
+    gap: 3.5rem;
     background-color: blanchedalmond;
+}
+
+.sidebar>div {
+    display: grid;
 }
 
 .header {
@@ -90,4 +101,37 @@ body {
     grid-area: 2 / 2 / 3 / 3;
 
     background-color: chocolate;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.sidebar-img {
+    width: 3rem;
+    justify-self: center;
+}
+
+.branding {
+    grid-template-columns: 50px 4fr;
+    align-items: center;
+}
+
+.branding-title {
+    font-size: 3rem;
+}
+
+.sidebar-content-one {
+    grid-template-columns: 1fr;
+}
+
+.sidebar-content-one>div,
+.sidebar-content-two>div {
+    display: grid;
+    grid-template-columns: 50px 3fr;
+    align-items: center;
+}
+
+.sidebar-nav {
+    font-size: 2rem;
 }
