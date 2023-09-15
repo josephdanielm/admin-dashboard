@@ -84,7 +84,7 @@ body {
     grid-template-rows: 50px 2fr 1fr 2fr;
     padding: 1.5rem;
     gap: 3.5rem;
-    background-color: blanchedalmond;
+    background-color: teal;
 }
 
 .sidebar>div {
@@ -94,13 +94,13 @@ body {
 .header {
     grid-column: 2 / 3;
 
-    background-color: aqua;
+    background-color: white;
 }
 
 .main-content {
     grid-area: 2 / 2 / 3 / 3;
 
-    background-color: chocolate;
+    background-color: whitesmoke;
 }
 
 .logo {
@@ -212,4 +212,12 @@ body {
     gap: 2rem;
     align-items: center;
     justify-content: end;
+}
+
+.card-icons img {
+    width: 3rem;
+}
+
+.trending-wrapper img {
+    width: 6rem;
 }
