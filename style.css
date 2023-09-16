@@ -225,7 +225,7 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 30rem;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: repeat(2, 1fr);
     padding: 2rem;
     gap: 2rem;
 }
@@ -247,14 +247,36 @@ body {
     border-radius: 1rem;
 }
 
+.projects {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+}
+
 .cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
+    overflow-x: auto;
 }
 
 .trending-wrapper {
     display: grid;
     grid-template-rows: repeat(4, 25%);
+}
+
+.trending-wrapper div {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 2rem 3rem;
+}
+
+.trending-wrapper h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 1.5rem;
+}
+
+.trending-wrapper p {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.75rem;
 }
