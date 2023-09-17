@@ -75,11 +75,10 @@ html {
 }
 
 body {
-    min-height: 100%;
-    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 27rem 4fr;
-    grid-template-rows: 14rem 1fr;
+    grid-template-rows: 14rem auto;
     font-family: 'Figtree', sans-serif;
 }
 
@@ -225,6 +224,7 @@ body {
 
 .main-content {
     display: grid;
+    height: auto;
     grid-template-columns: 3fr 30rem;
     grid-template-rows: repeat(2, 50%);
     padding: 3rem 2rem;
@@ -262,7 +262,7 @@ body {
     grid-template-rows: repeat(4, 6rem);
     background-color: darkgrey;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0 1rem 2rem;
 }
 
 .trending-wrapper div {
@@ -302,9 +302,9 @@ body {
     display: grid;
     background-color: darkgrey;
     border-radius: 1rem;
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     grid-template-rows: 1fr 0.2rem 1fr 0.2rem 1fr;
-    height: fit-content;
+    height: 32rem;
     row-gap: 0.5rem;
 }
 
@@ -319,4 +319,33 @@ body {
 hr {
     height: 0.2rem;
     align-self: center;
+}
+
+.card-content {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-rows: 3rem 10rem 3rem;
+}
+
+.card {
+    display: grid;
+    border-left: 0.8rem solid olivedrab;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-para {
+    font-size: 1.5rem;
+    max-width: 66ch;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    gap: 3rem;
+    justify-content: end;
+    align-self: end;
+    cursor: pointer;
 }
