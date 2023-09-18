@@ -192,15 +192,15 @@ body {
 }
 
 .header-account {
-    grid-template-columns: 4rem 5rem 10rem;
+    grid-template-columns: 4rem 5rem 14rem;
     justify-content: end;
     gap: 2rem;
     align-items: center;
 }
 
 .header-profile {
-    grid-template-columns: 7rem 30rem;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 7rem 35rem;
+    grid-template-rows: 4fr 5fr;
     align-items: center;
 }
 
@@ -271,6 +271,7 @@ body {
     background-color: white;
     border-radius: 1rem;
     padding: 1rem 0 1rem 2rem;
+    box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
 }
 
 .trending-wrapper div {
@@ -314,6 +315,7 @@ body {
     grid-template-rows: 1fr 0.2rem 1fr 0.2rem 1fr;
     height: 32rem;
     row-gap: 0.5rem;
+    box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
 }
 
 .announcements-wrapper h2 {
@@ -338,6 +340,7 @@ hr {
 .card {
     display: grid;
     border-left: 0.8rem solid var(--cool-teal);
+    box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
 }
 
 .card-title {
@@ -370,4 +373,30 @@ hr {
     padding: 0.75rem 2rem;
     border-radius: 3rem;
     border: none;
+}
+
+.header-search-bar {
+    height: 3rem;
+    border-radius: 1.25rem;
+    border: 2px solid var(--light-gray);
+    font-size: 1.8rem;
+    padding-left: 0.75rem;
+}
+
+.header-account-image {
+    width: 2.75rem;
+    cursor: pointer;
+}
+
+.header-account-name {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-profile-greeting {
+    font-size: 1.5rem;
+}
+
+.header-profile-name {
+    font-size: 2.3rem;
 }
