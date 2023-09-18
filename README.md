@@ -3,6 +3,8 @@
 <h2>Replicate an admin-dashboard-like interface with CSS Grid.</h2>
 
 <img src="https://github.com/josephdanielm/admin-dashboard/assets/137225181/fcf39f8f-bb70-4e1f-a8d7-a1414519ab6f" width="700">
+
+<a href='https://josephdanielm.github.io/admin-dashboard/' target='_blank'>Live Preview</a>
 <hr>
 
 <h3>Key Insights:</h3>
